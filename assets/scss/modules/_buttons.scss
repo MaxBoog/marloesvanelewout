@@ -1,0 +1,17 @@
+.btn {
+  border-radius: 0px;
+  border: none;
+  font-family: $font-secondary;
+  &:hover {
+    background-color: $color-3;
+  }
+}
+
+.btn-primary {
+  color: $white !important;
+  background-color: $color-2;
+}
+
+.btn-send {
+  @extend .btn-primary;
+}

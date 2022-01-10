@@ -1,0 +1,85 @@
+// navbar styles
+
+#navbar {
+  transition: 0.4s;
+}
+.navbar {
+  font-family: $font-secondary;
+  .navbar-nav {
+    height: 100vh;
+    text-align: center;
+    padding-top: 25vh;
+  }
+}
+
+// hamburger icon behaviour
+
+.navbar-toggler {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+
+  span {
+    margin: 0;
+    padding: 0;
+  }
+
+  .toggler-icon {
+    display: block;
+    position: absolute;
+    background-color: $black;
+    height: 1px;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 5px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 15px;
+  transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+  top: inherit;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .bottom-bar {
+  top: inherit;
+  transform: rotate(-135deg);
+}
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+  .navbar-nav {
+    height: 100% !important;
+    padding-top: 0 !important;
+  }
+}
