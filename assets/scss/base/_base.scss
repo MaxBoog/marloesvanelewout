@@ -16,21 +16,31 @@ h3,
 h4,
 h5 {
   font-family: $font-secondary;
-  margin: 1.5rem 0;
+  margin: 3rem 0;
   color: $black;
   &::selection {
     color: $white;
     background-color: $color-3;
   }
   &::before {
-    content: "- ";
+    content: "~ ";
     color: $color-2;
     font-style: italic;
   }
   &::after {
-    content: " -";
+    content: " ~";
     color: $color-2;
     font-style: italic;
+  }
+}
+
+@media (min-width: 998px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 6rem 0;
   }
 }
 p {

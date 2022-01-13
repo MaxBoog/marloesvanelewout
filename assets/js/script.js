@@ -34,6 +34,6 @@ const fadeEffect = setInterval(() => {
     clearInterval(fadeEffect)
     spinner.style.display = "none"
   }
-}, 100)
+}, 50)
 
 window.addEventListener("load", fadeEffect)

@@ -3,8 +3,8 @@ class CustomNav extends HTMLElement {
     super()
     this.innerHTML = `
         
-    <nav class="navbar container sticky-top navbar-expand-md navbar-light" id="navbar">
-      <div class="container-fluid">
+    <nav class="navbar container-fluid sticky-top navbar-expand-md navbar-light" id="navbar">
+      <div class="container">
         <a class="navbar-brand" href="/">Marloes van Elewout</a>
         <button
           class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-evenly"

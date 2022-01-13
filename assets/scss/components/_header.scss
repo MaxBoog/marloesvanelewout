@@ -1,13 +1,24 @@
 header {
-  &::after {
-    content: "";
-    border-top-left-radius: 70% 100%;
-    border-top-right-radius: 50% 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    background-color: $light-grey;
-    height: 85%;
+  height: 100vh;
+  background: linear-gradient($color-1, $white);
+  p {
+    font-size: $font-lg;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    p {
+      font-size: $font-xl;
+    }
+  }
+}
+
+@media (min-width: 998px) {
+  header {
+    p {
+      font-size: $font-2xl;
+      padding: 0 10rem;
+    }
   }
 }
