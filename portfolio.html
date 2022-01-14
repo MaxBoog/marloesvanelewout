@@ -42,7 +42,7 @@
     />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>Marloes van Elewout</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <!-- <div class="spinner">
@@ -53,6 +53,10 @@
 
     <custom-nav></custom-nav>
 
+    <button onclick="scrollToTop()" class="scroll-top bounce">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
     <section class="container">
       <div class="row">
         <div class="col text-center">
@@ -62,11 +66,12 @@
       <div class="row" data-masonry='{"percentPosition": true }'>
         <div class="col-sm-6 col-lg-4 mb-4">
           <!-- Card -->
-          <a class="card-link" href="foodhallen-breda.html">
+          <a class="card-link" href="/portfolio/foodhallen-breda.html">
             <div class="card card-4">
               <img
                 src="/assets/images/foodhallen-3.webp"
                 alt="Foodhallen Breda"
+                height="250px"
               />
 
               <div class="card-body">
@@ -97,11 +102,12 @@
 
         <div class="col-sm-6 col-lg-4 mb-4">
           <!-- Card -->
-          <a class="card-link" href="#">
+          <a class="card-link" href="portfolio/breda-coasters.html">
             <div class="card card-4">
               <img
                 src="/assets/images/breda.webp"
                 alt="Onderzetters van de stad Breda"
+                height="250px"
               />
 
               <div class="card-body">
@@ -117,28 +123,10 @@
         </div>
 
         <div class="col-sm-6 col-lg-4 mb-4">
-          <!-- Quote -->
-          <div class="card bg-primary text-white text-center p-3">
-            <figure class="mb-0">
-              <blockquote class="blockquote">
-                <p>A well-known quote, contained in a blockquote element.</p>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0 text-white">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
           <!-- Card -->
-          <a href="#">
+          <a class="card-link" href="/portfolio/bierfles-lichtobject.html">
             <div class="card card-4 bg-dark text-white">
-              <img
-                src="/assets/images/lamp-3.webp"
-                class="card-img"
-                alt="Culturele Stoel"
-              />
+              <img src="/assets/images/lamp-3.webp" alt="Culturele Stoel" />
               <div class="card-img-overlay">
                 <h5 class="card-title text-white">
                   Bierfles omgetoverd tot lichtobject
@@ -148,39 +136,149 @@
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                <p class="card-text">Last updated 3 mins ago</p>
               </div>
             </div>
           </a>
         </div>
+
         <div class="col-sm-6 col-lg-4 mb-4">
-          <!-- Quote -->
-          <div class="card card-4 p-3 text-end">
+          <!-- Quote text-end -->
+          <div class="card p-3 text-end">
             <figure class="mb-0">
               <blockquote class="blockquote">
-                <p>A well-known quote, contained in a blockquote element.</p>
+                <p>Nog een quote maar dan naar rechts uitgelijnd</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                Je mag hier neerzetten wat je wil
+                <cite title="Source Title">Of weghalen</cite>
               </figcaption>
             </figure>
           </div>
         </div>
         <div class="col-sm-6 col-lg-4 mb-4">
-          <!-- Card with no image-->
-          <div class="card card-4">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is another card with title and supporting text below. This
-                card has some additional content to make it slightly taller
-                overall.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+          <!-- Card -->
+          <a class="card-link" href="/portfolio/duurzame-tandenborstel.html">
+            <div class="card card-4">
+              <img
+                src="/assets/images/tandenborstel.webp"
+                alt="Duurzame Tandenborstel"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Duurzame tandenborstel</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Reiciendis quas alias, qui eos illum optio praesentium
+                  eligendi officia in sint?
+                </p>
+              </div>
             </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <!-- Card -->
+          <a class="card-link" href="/portfolio/culturele-stoel.html">
+            <div class="card card-4">
+              <img
+                src="/assets/images/culturele-stoel-1.webp"
+                alt="Culturele Stoel"
+                height="400px"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Culturele Stoel</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Reiciendis quas alias, qui eos illum optio praesentium
+                  eligendi officia in sint?
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <!-- Card -->
+          <a class="card-link" href="/portfolio/balie.html">
+            <div class="card card-4">
+              <img
+                src="/assets/images/balie-3.webp"
+                alt="Balie"
+                height="250px"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Balie</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Reiciendis quas alias, qui eos illum optio praesentium
+                  eligendi officia in sint?
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <!-- Quote with background  -->
+          <div class="card text-center p-3">
+            <figure class="mb-0">
+              <blockquote class="blockquote">
+                <p>En dan nog eentje om het af te maken.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">
+                Lalalala<cite title="Source Title">Lalalala</cite>
+              </figcaption>
+            </figure>
           </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <!-- Card -->
+          <a class="card-link" href="/portfolio/waterlelie-lichtobject.html">
+            <div class="card card-4">
+              <img
+                src="/assets/images/waterlelie.webp"
+                alt="Waterlelie Lichtobject"
+                height="250px"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Waterlelie Lichtobject</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Reiciendis quas alias, qui eos illum optio praesentium
+                  eligendi officia in sint?
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <!-- Card -->
+          <a class="card-link" href="/portfolio/vaas.html">
+            <div class="card card-4">
+              <img src="/assets/images/vaas-3.webp" alt="Vaas" height="300px" />
+
+              <div class="card-body">
+                <h5 class="card-title">Vaas</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Reiciendis quas alias, qui eos illum optio praesentium
+                  eligendi officia in sint?
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <!-- Card -->
+          <a class="card-link" href="/portfolio/keramische-vaas.html">
+            <div class="card card-4 bg-dark text-white">
+              <img
+                src="/assets/images/keramische-vaas-2.webp"
+                class="card-img"
+                alt="Keramische Vaas Floris Wubben"
+              />
+            </div>
+          </a>
         </div>
       </div>
     </section>
