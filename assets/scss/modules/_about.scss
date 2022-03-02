@@ -1,5 +1,6 @@
 #about {
   background-color: $dark-grey;
+  padding-bottom: 96px;
   h1 {
     color: $white;
   }
@@ -24,4 +25,24 @@
 
 .wave .shape-fill {
   fill: $dark-grey;
+}
+
+.wave-2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.wave-2 .shape-fill {
+  fill: #393e46;
 }
